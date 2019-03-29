@@ -1,0 +1,24 @@
+{
+  "name": "rpggame",
+  "version": "1.0.0",
+  "description": "A fun rpg game written in javascript.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendonwelsh/Simple-RPG.git"
+  },
+  "author": "Brendon Welsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendonwelsh/Simple-RPG/issues"
+  },
+  "homepage": "https://github.com/brendonwelsh/Simple-RPG#readme",
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
