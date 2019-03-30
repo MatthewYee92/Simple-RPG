@@ -15,15 +15,16 @@ export class GameObject {
         }
     }
 
-    update(dt) {
+    update(engine, dt) {
         this.children.forEach((child, index)=> {
-            child.update(dt);
+            child.update(engine, dt);
         });
     }
 
     draw(ctx, offset) {
+        let localOffset = offset.clone().add(this.position);
         this.children.forEach((child, index)=> {
-            child.draw(ctx, offset.add(this.position));
+            child.draw(ctx, localOffset);
         });
     }
 }

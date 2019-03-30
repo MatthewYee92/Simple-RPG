@@ -4,6 +4,10 @@ export class Vec {
         this.y = y;
     }
 
+    clone() {
+        return new Vec(this.x, this.y)
+    }
+
     add(other) {
         if (other instanceof Vec) {
             this.x += other.x;
