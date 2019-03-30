@@ -20,13 +20,13 @@ export class Engine {
     loop() {
         let time = new Date().getTime();
         let dt = (time-this.lastTime)/1000;
-        console.log(dt);
 
         // update
         if (this.userUpdate) {
-            this.userUpdate();
+            this.userUpdate(dt);
         }
         // draw
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
         if (this.userDraw) {
             this.userDraw(this.ctx);
         }
